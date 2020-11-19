@@ -7,32 +7,5 @@ android:layout_height="match_parent"
 tools:context=".MainActivity"
     android:orientation="vertical">
 
-<EditText
-    android:id="@+id/input"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Input text"
-    android:layout_marginTop="100dp" />
 
-    <EditText
-        android:id="@+id/key"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Key"
-        android:layout_margin="20dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:onClick="onCaesarButtonClick"
-        android:text="Go"
-        android:layout_marginLeft="60dp"/>
-
-    <EditText
-        android:layout_margin="20dp"
-        android:id="@+id/result"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Result"/>
 </LinearLayout>
