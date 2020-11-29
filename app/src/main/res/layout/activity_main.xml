@@ -1,11 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-tools:context=".MainActivity"
-    android:orientation="vertical">
 
+    android:orientation="vertical"
+   android:background="@drawable/wallpaper">
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="81dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="167dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="63dp"
+        android:background="@drawable/key"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDecode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDecode"
+        android:layout_width="213dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="53dp"
+        android:background="@drawable/custom_buttons2"
+        android:fontFamily="sans-serif"
+        android:onClick="onClickBtn1"
+        android:text="@string/textBtn1"
+        android:textColor="#295A81"
+        android:textSize="20sp"
+
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEncode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="128dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="199dp"
+        android:layout_marginBottom="61dp"
+        android:fontFamily="sans-serif"
+        android:text="Steg"
+
+        android:textColor="#FFFFFF"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDecode"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonEncode"
+        android:layout_width="213dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="260dp"
+        android:background="@drawable/custom_buttons2"
+        android:fontFamily="sans-serif"
+        android:onClick="onClickBtn2"
+        android:text="@string/decode"
+        android:textColor="#295A81"
+        android:textSize="20sp"
+
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

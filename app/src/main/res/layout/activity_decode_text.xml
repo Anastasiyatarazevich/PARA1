@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper">
+
+    <ImageView
+        android:id="@+id/imageButton"
+        android:layout_width="277dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="388dp"
+
+
+        android:src="@drawable/pp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVis" />
+
+    <TextView
+        android:id="@+id/textVis"
+        android:layout_width="403dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="644dp"
+        android:text="@string/tap"
+
+        android:textAlignment="center"
+        android:textColor="#99FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="58dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/yourtxt"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView1"
+        app:layout_constraintEnd_toStartOf="@+id/message1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="184dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/yourkey"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/secret_key"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/message1"
+        android:layout_width="207dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/custom_buttons"
+        android:lineSpacingExtra="8sp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:singleLine="false"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/secret_key"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <EditText
+        android:id="@+id/secret_key"
+        android:layout_width="207dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="184dp"
+        android:background="@drawable/custom_buttons"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:singleLine="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/message1" />
+
+    <Button
+        android:id="@+id/decode_button"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/custom_buttons2"
+        android:textColor="#020202"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="@string/textBtn1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="95dp"
+        android:background="@drawable/custom_buttons2"
+        android:text="@string/textBtn2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:clickable="false"
+        app:layout_constraintTop_toBottomOf="@+id/secret_key"
+        app:layout_constraintVertical_bias="0.666" />
+</androidx.constraintlayout.widget.ConstraintLayout>

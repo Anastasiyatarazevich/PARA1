@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">PARA1</string>
+    <string name="app_name">Stego</string>
+    <string name="textBtn1">Encode</string>
+    <string name="decode">Decode</string>
+    <string name="textBtn2">Save image</string>
+    <string name="yourtxt">Your text:</string>
+    <string name="yourkey">Your key:</string>
+    <string name="tap">Tap to select your picture</string>
+    <string name="wait">Saving, please wait...</string>
+    <string name="loading">Loading, Please Wait...</string>
+    <string name="encodingmes">Encoding Message</string>
+    <string name="save">Saving Image</string>
+    <string name="saved">Saved</string>
+    <string name="select">Select Picture</string>
+    <string name="resolution">The resolution must be more than 200x200 pixels and less than 5000x5000</string>
+    <string name="encoded">Encoded</string>
+    <string name="decoded">Decoded</string>
+    <string name="nomessage">No message found</string>
+    <string name="nosecretkey">Wrong secret key</string>
+    <string name="selectimagefirst">Select Image First</string>
 </resources>

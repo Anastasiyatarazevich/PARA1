@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stego</string>
+    <string name="textBtn1">Закодировать</string>
+    <string name="decode">Раскодировать</string>
+    <string name="textBtn2">Сохранить изображение</string>
+    <string name="yourtxt">Ваш текст:</string>
+    <string name="yourkey">Ваш ключ:</string>
+    <string name="tap">Нажмите, чтобы выбрать изображение</string>
+    <string name="wait">Сохранение, подождите, пожалуйста</string>
+    <string name="loading">Загрузка, подождите, пожалуйста</string>
+    <string name="encodingmes">Кодирование сообщения</string>
+    <string name="save">Сохрание изображения</string>
+    <string name="saved">Сохранено</string>
+    <string name="select">Выберите изображение</string>
+    <string name="resolution">Разрешение должно быть больше 200х200 и меньше 5000х5000</string>
+    <string name="encoded">Закодировано</string>
+    <string name="decoded">Раскодировано</string>
+    <string name="nomessage">Сообщения не найдено</string>
+    <string name="nosecretkey">Неверный секретный пароль</string>
+    <string name="selectimagefirst">Сначала выберите изображение</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_read"
+        android:icon="@drawable/picture1"
+        android:title="Encode" />
+
+    <item
+        android:id="@+id/navigation_pill"
+
+        android:title="Decode" />
+
+
+</menu>
